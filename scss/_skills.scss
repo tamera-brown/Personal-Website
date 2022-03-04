@@ -1,0 +1,117 @@
+@import 'config';
+
+
+
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+
+    border: 2px solid $primary-color;
+
+    border-radius: 20px;
+    div{
+        position: relative;
+        width: 0;
+        height: 9px;
+        border-radius: 10px;
+        background-color: $primary-color;
+    
+    
+    }
+}
+.animate{
+   #java-bar{
+    animation: java-fill 3s forwards;
+   }
+   #html-css-js-bar{
+    animation: html-css-js-fill 3s forwards;
+   }
+   #python-bar{
+    animation: python-fill 3s forwards;
+   }
+   #c-bar{
+    animation: c-fill 3s forwards;
+   }
+   #SQL-bar{ 
+    animation: SQL-fill 3s forwards;
+    }
+    #sping-boot-bar{
+        animation: spring-boot-fill 3s forwards;
+    }
+    #angular-bar{
+        animation: angular-fill 3s forwards;
+    }
+    #react-bar{
+        animation: react-fill 3s forwards;
+    }
+    #JPA-bar{
+        animation: JPA-fill 3s forwards;
+    }
+    #ML-bar{
+        animation: ML-fill 3s forwards;
+    }
+}
+@keyframes java-fill{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes html-css-js-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes python-fill{
+    100%{
+        width: 80%;
+    }
+} 
+
+@keyframes c-fill{
+    100%{
+        width: 95%;
+    }
+} 
+
+@keyframes SQL-fill{
+    100%{
+        width: 95%;
+    }
+} 
+
+@keyframes spring-boot-fill{
+    100%{
+        width: 95%;
+    }
+} 
+
+@keyframes angular-fill{
+    100%{
+        width: 85%;
+    }
+} 
+
+@keyframes react-fill{
+    100%{
+        width: 80%;
+    }
+} 
+
+@keyframes JPA-fill{
+    100%{
+        width: 80%;
+    }
+} 
+
+@keyframes ML-fill{
+    100%{
+        width: 70%;
+    }
+} 

@@ -1,0 +1,9 @@
+$primary-color: rgb(138, 43, 226);
+$background-opacity:0.6;
+$type: top;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+
