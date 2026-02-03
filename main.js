@@ -3,6 +3,13 @@ const navMenu = document.querySelector(".menu-nav");
 const navLink = document.querySelectorAll(".nav-link");
 const menu = document.querySelector('.menu');
 const arrowbutton = document.getElementById("back-to-top");
+const yearSpan = document.getElementById('year');
+
+// Check if the element exists to prevent errors
+if (yearSpan) {
+    // Set the text content of the span to the current year
+    yearSpan.textContent = new Date().getFullYear();
+}
 
 menuBtn.addEventListener("click", mobileMenu);
 
