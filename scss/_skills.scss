@@ -1,7 +1,4 @@
-@import 'config';
-
-
-
+@use 'config';
 
 .details{
     width: 100%;
@@ -12,7 +9,7 @@
 .bar{
     position: relative;
 
-    border: 2px solid $primary-color;
+    border: 2px solid config.$primary-color;
 
     border-radius: 20px;
     div{
@@ -20,7 +17,7 @@
         width: 0;
         height: 9px;
         border-radius: 10px;
-        background-color: $primary-color;
+        background-color: config.$primary-color;
     
     
     }
@@ -35,6 +32,9 @@
    #python-bar{
     animation: python-fill 3s forwards;
    }
+    #selenide-bar{
+     animation: selenide-fill 3s forwards;
+    }
    #c-bar{
     animation: c-fill 3s forwards;
    }
@@ -56,6 +56,10 @@
     #ML-bar{
         animation: ML-fill 3s forwards;
     }
+
+    #docker-bar{
+        animation: docker-fill 3s forwards;
+    }
 }
 @keyframes java-fill{
     100%{
@@ -74,9 +78,15 @@
     }
 } 
 
+@keyframes selenide-fill{
+    100%{
+        width: 90%;
+    }
+} 
+
 @keyframes c-fill{
     100%{
-        width: 95%;
+        width: 70%;
     }
 } 
 
@@ -115,3 +125,8 @@
         width: 70%;
     }
 } 
+@keyframes docker-fill{
+    100%{
+        width: 80%;
+    }
+}

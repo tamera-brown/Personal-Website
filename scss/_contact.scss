@@ -1,4 +1,4 @@
-@import 'config';
+@use 'config';
 
 /*--------------------------------------------------------------
 # Contact
@@ -14,7 +14,7 @@
   }
   .contact .info i {
     font-size: 20px;
-    color: $primary-color;
+    color: config.$primary-color;
     float: left;
     width: 44px;
     height: 44px;
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    @include easeOut;
+    @include config.easeOut;
   }
   .contact .info h4 {
     padding: 0 0 0 60px;
@@ -61,11 +61,11 @@
   }
   
   .contact .info .social-links a:hover {
-    background: $primary-color;
+    background: config.$primary-color;
     color: #fff;
   }
   .contact .info .email:hover i, .contact .info .linkedin:hover i, .contact .info .github:hover i {
-    background: $primary-color;
+    background: config.$primary-color;
     color: #fff;
   }
   .contact .formspree-form {
@@ -95,7 +95,7 @@
     padding: 10px 15px;
   }
   .contact .formspree-form button[type=submit] {
-    background: $primary-color;
+    background: config.$primary-color;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -103,5 +103,5 @@
     border-radius: 4px;
   }
   .contact .formspree-form button[type=submit]:hover {
-    background: $primary-color;
+    background: config.$primary-color;
   }
